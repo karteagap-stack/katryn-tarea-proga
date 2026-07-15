@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haaland vs Bellingham: Duelo de Titanes</title>
+    <style>
+        /* Estilos Generales */
+        :root {
+            --primary: #0f172a;
+            --accent-haaland: #00c6ff;
+            --accent-bellingham: #c5a85c;
+            --text-light: #f8fafc;
+            --bg-card: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #001f3f, #0f172a, #2a1b0a);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-bellingham);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a:hover {
+            background: var(--accent-haaland);
+            color: var(--primary);
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            padding: 20px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #475569;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Grid de Perfiles */
+        .profiles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .profile-card {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 5px solid;
+        }
+
+        .haaland-card { border-color: var(--accent-haaland); }
+        .bellingham-card { border-color: var(--accent-bellingham); }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #475569;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 3px solid #fff;
+        }
+
+        .stats-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .stats-table th, .stats-table td {
+            padding: 10px;
+            border-bottom: 1px solid #334155;
+            text-align: left;
+        }
+
+        .stats-table th { color: #94a3b8; }
+
+        /* Estilos del Enlace Externo */
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--accent-haaland), var(--accent-bellingham));
+            color: var(--primary);
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: transform 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #090d16;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .profiles { grid-template-columns: 1fr; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Haaland & Bellingham</h1>
+        <p>De compañeros en Dortmund a definir la nueva era del fútbol mundial.</p>
+        <nav>
+            <a href="#perfiles">Perfiles</a>
+            <a href="#historia">La Hermandad</a>
+            <a href="#cara-a-cara">Cara a Cara</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Sección Perfiles -->
+        <section id="perfiles">
+            <h2>Los Protagonistas</h2>
+            <div class="profiles">
+                <!-- Haaland -->
+                <div class="profile-card haaland-card">
+                    <div class="profile-img">EH9</div>
+                    <h3>Erling Haaland</h3>
+                    <p><strong>Posición:</strong> Delantero Centro</p>
+                    <p><strong>Club Actual:</strong> Manchester City</p>
+                    <p>El "Androide" nórdico. Una fuerza de la naturaleza implacable de cara a portería, caracterizado por su potencia física, desmarques letales y un promedio de gol descomunal en la Premier League y Champions League.</p>
+                </div>
+                <!-- Bellingham -->
+                <div class="profile-card bellingham-card">
+                    <div class="profile-img">JB5</div>
+                    <h3>Jude Bellingham</h3>
+                    <p><strong>Posición:</strong> Centrocampista / Mediapunta</p>
+                    <p><strong>Club Actual:</strong> Real Madrid</p>
+                    <p>Elegancia, carácter y llegada. El todocampista inglés que ha conquistado el Santiago Bernabéu y la selección de los "Three Lions" con su espectacular liderazgo, visión de juego y pegada en momentos decisivos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Historia -->
+        <section id="historia">
+            <h2>El Origen: Borussia Dortmund</h2>
+            <p>Aunque hoy brillan en equipos rivales y dominan las portadas de los medios con sus respectivos clubes, la gran historia de Haaland y Bellingham se forjó en Alemania. Coincidieron en el <strong>Borussia Dortmund</strong> entre 2020 y 2022, creando un vínculo futbolístico y personal indestructible que los fanáticos bautizaron cariñosamente como el "bromance" definitivo del fútbol moderno.</p>
+            <blockquote>"Fuera del terreno de juego compartimos risas, pero dentro sabíamos exactamente qué movimiento iba a hacer el otro. Esa química no se pierde."</blockquote>
+        </section>
+
+        <!-- Sección Estadísticas / Cara a Cara -->
+        <section id="cara-a-cara">
+            <h2>Duelo Directo y Estadísticas</h2>
+            <p>Ambos jugadores han dejado huella en el torneo más exigente del planeta. Aquí te presentamos una comparativa directa basada en su trayectoria general:</p>
+            
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Erling Haaland</th>
+                        <th>Jude Bellingham</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Rol Principal</strong></td>
+                        <td>Goleador de Área (9)</td>
+                        <td>Creador y Llegador (5 / 10)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fortaleza Clave</strong></td>
+                        <td>Definición al primer toque y velocidad</td>
+                        <td>Conducción de balón, posicionamiento y liderazgo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fórmula de Éxito</strong></td>
+                        <td>Bota de Oro y Campeón del Triplete con el City</td>
+                        <td>Ganador del Golden Boy y referente del Real Madrid</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <p>¿Quieres conocer los últimos detalles de su épico duelo en los cuartos de final de la Copa del Mundo 2026?</p>
+                <a href="https://www.fifa.com" target="_blank" class="cta-btn">Ver Más Noticias Oficiales</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Sitio Web Creado para el Análisis de Estructura Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
